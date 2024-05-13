@@ -1,7 +1,6 @@
-from PySide6.QtCore import QSize, QRect, Qt
+from PySide6.QtCore import QSize, Qt
 from PySide6.QtGui import QAction
-
-from PySide6.QtWidgets import QDialog,QDialogButtonBox,QMessageBox, QSizePolicy, QSpacerItem, QScrollArea, QGridLayout, QTabWidget, QApplication,QMainWindow, QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QGroupBox, QLabel, QTextEdit, QLineEdit, QTabBar, QToolBar
+from PySide6.QtWidgets import QDialog,QDialogButtonBox,QMessageBox, QTabWidget, QApplication,QMainWindow, QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QGroupBox, QLabel, QLineEdit, QToolBar
 import sys
 
 class Course():
@@ -57,7 +56,6 @@ class Course():
     
     def clear_outputs(self):
         self.__outputs = {}
-    
 
 class CourseField(QWidget):
     def __init__(self,parent,name):
