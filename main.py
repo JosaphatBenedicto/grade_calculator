@@ -275,8 +275,11 @@ class MainWindow(QMainWindow):
         print(str)
 
 
-app = QApplication(sys.argv)
-window = MainWindow(app)
+def main():
+    app = QApplication(sys.argv)
+    window = MainWindow(app)
+    window.show()
+    app.exec()
 
-window.show()
-app.exec()
+if __name__ == "__main__":
+    main()
